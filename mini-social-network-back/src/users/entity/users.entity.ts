@@ -39,16 +39,16 @@ export class User extends Model<User> {
   declare password: string;
 
   @Column({
-    type: DataType.DATE,
-    allowNull: true,
-  })
-  declare birthDayDate?: Date;
-
-  @Column({
     type: DataType.STRING,
     allowNull: true,
   })
   declare profilePhoto?: string;
+
+  @Column({
+    type: DataType.DATE,
+    allowNull: true,
+  })
+  declare birthDayDate?: Date;
 
   @Column({
     type: DataType.TEXT,
